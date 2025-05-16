@@ -100,42 +100,25 @@ export default function Hero() {
                                     </p>
                                 </AnimatedGroup>
 
-                                <AnimatedGroup
-                                    variants={{
-                                        container: {
-                                            visible: {
-                                                transition: {
-                                                    staggerChildren: 0.05,
-                                                    delayChildren: 0.75,
-                                                },
-                                            },
-                                        },
-                                        ...transitionVariants,
-                                    }}
-                                    className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
-                                    <div
-                                        key={1}
-                                        className="bg-up-yellow/90 rounded-[14px] border p-0.5">
-                                        <Button
-                                            asChild
-                                            size="lg"
-                                            className="rounded-xl px-5 text-base text-up-black font-medium">
-                                            <Link href="#contato">
-                                                <span className="text-nowrap">Comece Hoje</span>
-                                            </Link>
-                                        </Button>
-                                    </div>
+                                <div className="mt-12 flex flex-col items-center justify-center gap-4 md:flex-row">
                                     <Button
-                                        key={2}
                                         asChild
                                         size="lg"
-                                        variant="ghost"
-                                        className="h-10.5 rounded-xl px-5">
-                                        <Link href="#servicos">
-                                            <span className="text-nowrap">Conheça Nossos Serviços</span>
+                                        className="bg-up-yellow text-up-black hover:bg-up-yellow/90 rounded-xl px-8 py-6 text-lg font-medium w-64 md:w-auto">
+                                        <Link href="#contato">
+                                            <span className="text-nowrap">Comece Hoje</span>
                                         </Link>
                                     </Button>
-                                </AnimatedGroup>
+                                    <Button
+                                        asChild
+                                        size="lg"
+                                        variant="outline"
+                                        className="border-up-yellow text-up-yellow hover:bg-up-yellow/10 rounded-xl px-8 py-6 text-lg w-64 md:w-auto">
+                                        <Link href="#servicos">
+                                            <span className="text-nowrap">Nossos Serviços</span>
+                                        </Link>
+                                    </Button>
+                                </div>
                             </div>
                         </div>
 
@@ -169,58 +152,7 @@ export default function Hero() {
                         </AnimatedGroup>
                     </div>
                 </section>
-                <section className="bg-background pb-16 pt-16 md:pb-32">
-                    <div className="group relative m-auto max-w-5xl px-6">
-                        <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
-                            <Link
-                                href="/clientes"
-                                className="block text-sm duration-150 hover:opacity-75">
-                                <span>Conheça Nossos Clientes</span>
 
-                                <ChevronRight className="ml-1 inline-block size-3" />
-                            </Link>
-                        </div>
-                        <div className="group-hover:blur-xs mx-auto mt-12 grid max-w-2xl grid-cols-4 gap-x-12 gap-y-8 transition-all duration-500 group-hover:opacity-50 sm:gap-x-16 sm:gap-y-14">
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-5 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/nvidia.svg"
-                                    alt="Cliente 1 Logo"
-                                    height="20"
-                                    width="auto"
-                                />
-                            </div>
-
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-4 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/column.svg"
-                                    alt="Cliente 2 Logo"
-                                    height="16"
-                                    width="auto"
-                                />
-                            </div>
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-4 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/github.svg"
-                                    alt="Cliente 3 Logo"
-                                    height="16"
-                                    width="auto"
-                                />
-                            </div>
-                            <div className="flex">
-                                <img
-                                    className="mx-auto h-5 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/nike.svg"
-                                    alt="Cliente 4 Logo"
-                                    height="20"
-                                    width="auto"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </main>
         </>
     )
