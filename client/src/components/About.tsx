@@ -19,13 +19,13 @@ export default function About() {
     },
     {
       icon: <Trophy className="text-accent text-3xl" />,
-      title: "+100 Projetos",
-      description: "Implementados",
+      title: "Projetos",
+      description: "Personalizados",
     },
     {
       icon: <Timer className="text-accent text-3xl" />,
-      title: "+5 Anos",
-      description: "De experiência",
+      title: "Agilidade",
+      description: "Na implementação",
     },
     {
       icon: <Handshake className="text-accent text-3xl" />,
