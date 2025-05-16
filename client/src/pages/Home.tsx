@@ -93,11 +93,11 @@ export default function Home() {
       <div className="min-h-screen">
         <Navbar />
         <Hero />
+        <Testimonials />
         <Benefits />
         <Services />
         <Process />
         <About />
-        <Testimonials />
         <ContactCTA />
 
         {/* Contact Section */}
