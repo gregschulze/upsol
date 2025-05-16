@@ -44,9 +44,9 @@ export default function About() {
             animate={revealed ? "show" : "hidden"}
           >
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=700"
-              alt="Equipe de especialistas da UP Soluções"
-              className="rounded-xl shadow-lg w-full h-auto"
+              src="/attached_assets/greg fundo evento.jpg"
+              alt="Fundador da UP Soluções"
+              className="rounded-xl shadow-lg w-full h-auto object-cover"
             />
           </motion.div>
 

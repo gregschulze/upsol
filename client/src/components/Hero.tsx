@@ -174,16 +174,37 @@ const HeroHeader = () => {
                         </div>
 
                         <div className="absolute inset-0 m-auto hidden size-fit lg:block">
-                            <ul className="flex gap-8 text-sm">
+                            <ul className="flex gap-6 text-sm">
                                 {menuItems.map((item, index) => (
                                     <li key={index}>
                                         <Link
                                             href={item.href}
-                                            className="text-muted-foreground hover:text-accent-foreground block duration-150">
+                                            className="text-muted-foreground hover:text-up-yellow block duration-150">
                                             <span>{item.name}</span>
                                         </Link>
                                     </li>
                                 ))}
+                                <li>
+                                    <Button 
+                                        asChild
+                                        size="sm" 
+                                        variant="outline"
+                                        className="border-up-yellow text-up-yellow hover:bg-up-yellow/10">
+                                        <Link href="#contato">
+                                            <span>Contato</span>
+                                        </Link>
+                                    </Button>
+                                </li>
+                                <li>
+                                    <Button 
+                                        asChild
+                                        size="sm"
+                                        className="bg-up-yellow text-up-black hover:bg-up-yellow/90">
+                                        <Link href="#contato">
+                                            <span>Orçamento</span>
+                                        </Link>
+                                    </Button>
+                                </li>
                             </ul>
                         </div>
 
