@@ -1,7 +1,7 @@
-import { SVGProps } from "react";
+import React from "react";
 
 // Utilizando as logos enviadas pelo usuário - UP e UP Soluções
-export function Logo(props: SVGProps<SVGSVGElement>) {
+export function Logo(props: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div className="w-[120px] h-[50px] relative" {...props}>
       <img 
@@ -13,7 +13,7 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-export function FullLogo(props: SVGProps<SVGSVGElement>) {
+export function FullLogo(props: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div className="w-[180px] h-[50px] relative" {...props}>
       <img 
